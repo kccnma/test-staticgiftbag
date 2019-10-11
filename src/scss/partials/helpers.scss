@@ -1,0 +1,91 @@
+// CONTAINER
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// GRIDS
+// Add to the parent of the grid
+.auto-grid {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &.top-aligned {
+    place-items: start center;
+  }
+}
+
+.grid-gap-sm {
+  grid-gap: 10px;
+}
+
+.grid-gap-md {
+  grid-gap: 20px;
+}
+
+.grid-gap-lg {
+  grid-gap: 40px;
+}
+
+// POSITIONS
+// Attach these to the parents
+
+// Works well with one child
+.center-block {
+  display: grid;
+  place-items: center;
+}
+
+// Works well with multiple children
+.center-content {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+}
+
+// IMAGES
+// Attach to the img
+.full-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+//CARDS
+.cardset {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.card {
+  width: 100%;
+  padding: 50px;
+  box-shadow: $box-shadow;
+  border-radius: 5px;
+}
+
+// PG MOUSE
+.pg-mouse {
+  .img-container {
+    height: 50vh;
+    width: 60%;
+    position: relative;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      left: -10%;
+      top: -10%;
+      object-fit: cover;
+      height: 120%;
+      width: 120%;
+    }
+  }
+}

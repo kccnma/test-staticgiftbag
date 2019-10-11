@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Site</title>
+    <meta
+      name="description"
+      content="A HTML + CSS + JS base front-end starter for simple web site projects modified from David Efhan's Static Gift Bag."
+    />
+    <link rel="stylesheet" href="../scss/styles.scss" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="site-branding">
+        <a data-swup-preload href="./index.html">Site</a>
+      </h1>
+      <nav>
+        <!-- <div
+          id="menubutton"
+          data-event="click"
+          data-event-element="site-navigation"
+          data-event-add="site-navigation-active"
+          class="use-event"
+        >
+          Menu
+        </div> -->
+        <ul class="site-navigation">
+          <li><a data-swup-preload href="./index.html">Home</a></li>
+          <li><a data-swup-preload href="./about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="swup" class="transition-fade">
+      <section id="hero" class="center-block pg-mouse">
+        <div class="img-container">
+          <img
+            data-pg-speed="0.7"
+            src=" ../img/featured-img.jpg"
+            alt="featured img"
+          />
+        </div>
+      </section>
+
+      <section class="center-block">
+        <h1>Static Gift Bag Test</h1>
+        <h2>A Test Site Based on David Efhan's Static Gift Bag</h2>
+        <p>
+          A HTML + CSS + JS base front-end starter for simple web site projects
+          modified from <a href="https://freezerbox.dev/">David Efhan</a> (<a
+            href="https://github.com/frzrbox"
+            >@frzrbox</a
+          >)'s
+          <a href="https://github.com/frzrbox/staticGiftBag">Static Gift Bag</a
+          >.
+        </p>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="text-centered">Key Features</h2>
+          <ul class="auto-grid top-aligned">
+            <li>
+              <h3>NPM &amp; Parcel Based</h3>
+              <p>
+                Super simple and fast way to setup a local dev environment to
+                get up and running. Just <code>npm install</code> to get setup
+                and <code>npm run dev</code> to spin up a local server and you
+                are all set to go. SASS support included.
+              </p>
+            </li>
+            <li>
+              <h3>Page Transitions via Swup.js</h3>
+              <p>
+                Super simple way to get up and running with page transitions
+                based on css animation (no javascript libraries needed, like
+                GSAP required, and fully customizable via css).
+              </p>
+            </li>
+            <li>
+              <h3>Scroll Animations via Lax.js</h3>
+              <p>
+                Super simple way to get up and running with scroll-triggered
+                animations using data attribute presets at very little cost
+                (3K). No need to write a custom JS solution with custom
+                @keyframe css solutions for common effects like fade in and fade
+                out.
+              </p>
+            </li>
+            <li>
+              <h3>Utility Classes</h3>
+              <p>
+                Simple set of go-to utility classes, such as .centered-block
+                (for quick horizontal and vertically centering) and .auto-grid
+                (for a super simple way to laying out content without excessive
+                grid markup).
+              </p>
+            </li>
+            <li>
+              <h3>So Much More!</h3>
+              <p>
+                David included a bunch of his go-to solutions, such as his
+                parallax-pg plugin, custom cursors, and event-group
+                data-attributes for adding click events in the markup (no
+                Javascript required). Super Cool. Thanks David!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="center-block">
+        <h2 class="text-centered">
+          Mad Props to <a href="https://freezerbox.dev/">David Efhan</a> (<a
+            href="https://github.com/frzrbox"
+            >@frzrbox</a
+          >)!
+        </h2>
+        <p>
+          Go check out his
+          <a href="https://github.com/frzrbox/staticGiftBag"
+            >staticGiftBag repo</a
+          >
+          and
+          <a href="https://trusting-kowalevski-cdbce7.netlify.com/"
+            >demo site</a
+          >
+          now for more details.
+        </p>
+      </section>
+    </main>
+
+    <script src="../js/scripts.js"></script>
+    <!-- ONLY INCLUDE IF USING GOODIES  -->
+    <script src="../js/goodies.js"></script>
+    <!-- HANDLES BUILT IN TRANSITIONS -->
+    <script src="../js/transition.js"></script>
+  </body>
+</html>

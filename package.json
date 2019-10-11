@@ -1,0 +1,29 @@
+{
+  "name": "staticgiftbag",
+  "version": "0.0.1",
+  "description": "A static base full of fun stuff like page transitions, scss and parallax-pg",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/pages/index.html",
+    "build": "parcel build src/pages/index.html",
+    "gh-build": "parcel build src/pages/index.html --public-url /staticGiftBag/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frzrbox/staticGiftBag.git"
+  },
+  "author": "frzrbox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frzrbox/staticGiftBag/issues"
+  },
+  "homepage": "https://github.com/frzrbox/staticGiftBag#readme",
+  "dependencies": {
+    "@swup/body-class-plugin": "^1.0.1",
+    "@swup/gia-plugin": "^1.0.1",
+    "lax.js": "^1.2.3",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.0",
+    "swup": "^2.0.7"
+  }
+}

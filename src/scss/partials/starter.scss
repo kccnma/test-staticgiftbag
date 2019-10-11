@@ -1,0 +1,145 @@
+// CAN DELETE AFTER WHEN STARTING A NEW PROJECT
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 2.5%;
+  z-index: 999999;
+
+  a {
+    color: $black;
+  }
+
+  .site-branding {
+    font-size: 1.5em;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
+    ul {
+      display: flex;
+      margin: 0;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      display: block;
+      padding: 1em;
+    }
+  }
+}
+
+// MOBILE NAV SHOW/HIDE WITH EVENT-GROUP
+// #menubutton {
+//   padding: 1em;
+//   cursor: pointer;
+// }
+// .site-navigation {
+//   opacity: 0;
+// }
+
+// .site-navigation-active {
+//   opacity: 1;
+// }
+
+#hero {
+  // height: 100vh;
+  width: 100%;
+  padding: 0;
+
+  &.pg-mouse {
+    .img-container {
+      height: 60vh;
+      width: 100%;
+
+      img {
+        left: -10%;
+        top: -10%;
+        height: 120%;
+        width: 120%;
+      }
+    }
+  }
+}
+
+// Big Sections
+section {
+  padding: 10vh 1em;
+  width: 100%;
+  position: relative;
+}
+
+#parallax-pg {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.container-flexy {
+  display: flex;
+  align-items: center;
+  padding: 10vh 0;
+  width: 80%;
+  margin: 0 auto;
+
+  .box {
+    height: 500px;
+    width: 60%;
+    background: $light-grey;
+  }
+
+  .text {
+    position: relative;
+    left: -10%;
+  }
+}
+
+.event-group {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10vh 0;
+
+  button {
+    width: fit-content;
+    margin: 0 auto 50px auto;
+    background: none;
+    border: none;
+    padding: 10px;
+    box-shadow: $box-shadow;
+  }
+
+  .show-me {
+    margin: 0 auto;
+    opacity: 0;
+    padding: 40px;
+    box-shadow: $box-shadow;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+    code {
+      font-size: 1.5rem;
+      line-height: 1.1;
+    }
+  }
+
+  .show-me-active {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $breakpoint-small) {
+  .event-group {
+    width: 60%;
+  }
+
+  .show-me {
+    code {
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+  }
+}
