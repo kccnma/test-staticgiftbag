@@ -1,11 +1,15 @@
 .transition-fade {
   transition: 0.4s;
-  transform: scale(1);
+  transform: scale(1) translateY(0);
   transform-origin: top center;
   opacity: 1;
 }
 
-html.is-animating .transition-fade {
+.is-animating .transition-fade {
   opacity: 0;
-  transform: scale(0.95);
+  transform: scale(1) translateY(-20px);
+}
+.is-leaving .transition-fade {
+  // opacity: 0;
+  transform: scale(0.95) translateY(40px);
 }
